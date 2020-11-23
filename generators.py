@@ -41,3 +41,12 @@ def gen():
 K2 = gen()
 print(*K)
 print(*K2)
+
+def gen_primes(s):
+    primes = set ()
+    for n in range(2, s):
+        if all(n%p > 0 for p in primes):
+            primes.add(n)
+            yield n
+
+print(*gen_primes(100))
