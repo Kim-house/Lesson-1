@@ -32,6 +32,6 @@
 #     if val % 3 > 0:
 #         print(val, end = ' ')
 
-t = [val if val % 2 else -val for val in range(20) if val %3]
-print(t)
+# t = [val if val % 2 else -val for val in range(20) if val %3]
+# print(t)
 
